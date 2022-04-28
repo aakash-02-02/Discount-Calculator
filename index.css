@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(153, 136, 136);
+    position: absolute;
+}
+
+button{
+    padding: 10px 20px;
+    color: black;
+    background-color: bisque;
+    font-size: large;
+    font-weight: 900;
+    position: relative;
+    top: 42vh;
+    left: 42vw;
+    border: 2px solid black;
+    border-radius: 10px;
+}
