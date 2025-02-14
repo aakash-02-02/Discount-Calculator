@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Calculator</title>
+    <link rel="shortcut icon" href="img.jpg">
+    <link rel="stylesheet" href="index.css" defer>
+</head>
+<body>
+   <button onclick="discountCalculator()">Discount Calculator</button:onclick>
+    <script>
+        function discountCalculator(){
+            var amount = Number(prompt("Enter the bill amount "));
+            var age = Number(prompt("Enter the age if age is above 18 then 12% of discount else"));
+            if(amount > 3500 && age >= 18){ 
+                alert(amount - ((amount*12)/100));
+            }
+            else if(amount > 3500 && age < 18){
+                alert(amount - ((amount*10)/100));
+            }
+            else if(amount > 2500){
+                alert(amount-((amount*5)/100));
+            }
+            else{
+                alert(amount);
+            }
+        }
+    </script>
+</body>
+</html>
